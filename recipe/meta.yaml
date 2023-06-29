@@ -12,7 +12,7 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
@@ -30,6 +30,8 @@ requirements:
     - glue-jupyter
     - yjs-widgets >=0.3.3,<0.4.0
     - ypywidgets >=0.4.0,<0.5.0
+  run_constrained:
+    - jupyterlab >=4,<5
 
 test:
   imports:
