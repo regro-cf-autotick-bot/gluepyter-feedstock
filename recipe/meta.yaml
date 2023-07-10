@@ -1,5 +1,5 @@
 {% set name = "glue-jupyterlab" %}
-{% set version = "0.2.0" %}
+{% set version = "0.3.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/glue_jupyterlab-{{ version }}.tar.gz
-  sha256: 0033758d2cca09a30e8b3161b4dcc7f86cba70ae196572ae3dc52657d30a6dfe
+  sha256: 7ecb9cdf517e7f29e1ec9a4a19b432fdb6babfb41e643c6ff42bba7073e82bc2
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
 
 requirements:
   host:
@@ -51,7 +51,7 @@ test:
 
 about:
   home: https://github.com/QuantStack/glue-jupyterlab
-  summary: 'Glue JupyterLab Extension'
+  summary: Glue JupyterLab Extension
   description: |
     Glue is an open-source data exploration tool that allows
     users to visualize and analyze data in a way that is
