@@ -1,15 +1,15 @@
-About gluepyter-feedstock
-=========================
+About glue-jupyterlab-feedstock
+===============================
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/gluepyter-feedstock/blob/main/LICENSE.txt)
 
-Home: https://github.com/QuantStack/gluepyter
+Home: https://github.com/QuantStack/glue-jupyterlab
 
 Package license: BSD-3-Clause
 
 Summary: Glue JupyterLab Extension
 
-Development: https://github.com/QuantStack/gluepyter
+Development: https://github.com/QuantStack/glue-jupyterlab
 
 Glue is an open-source data exploration tool that allows
 users to visualize and analyze data in a way that is
@@ -38,53 +38,53 @@ Current release info
 
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
-| [![Conda Recipe](https://img.shields.io/badge/recipe-gluepyter-green.svg)](https://anaconda.org/conda-forge/gluepyter) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/gluepyter.svg)](https://anaconda.org/conda-forge/gluepyter) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/gluepyter.svg)](https://anaconda.org/conda-forge/gluepyter) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/gluepyter.svg)](https://anaconda.org/conda-forge/gluepyter) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-glue--jupyterlab-green.svg)](https://anaconda.org/conda-forge/glue-jupyterlab) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/glue-jupyterlab.svg)](https://anaconda.org/conda-forge/glue-jupyterlab) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/glue-jupyterlab.svg)](https://anaconda.org/conda-forge/glue-jupyterlab) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/glue-jupyterlab.svg)](https://anaconda.org/conda-forge/glue-jupyterlab) |
 
-Installing gluepyter
-====================
+Installing glue-jupyterlab
+==========================
 
-Installing `gluepyter` from the `conda-forge` channel can be achieved by adding `conda-forge` to your channels with:
+Installing `glue-jupyterlab` from the `conda-forge` channel can be achieved by adding `conda-forge` to your channels with:
 
 ```
 conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `gluepyter` can be installed with `conda`:
+Once the `conda-forge` channel has been enabled, `glue-jupyterlab` can be installed with `conda`:
 
 ```
-conda install gluepyter
-```
-
-or with `mamba`:
-
-```
-mamba install gluepyter
-```
-
-It is possible to list all of the versions of `gluepyter` available on your platform with `conda`:
-
-```
-conda search gluepyter --channel conda-forge
+conda install glue-jupyterlab
 ```
 
 or with `mamba`:
 
 ```
-mamba search gluepyter --channel conda-forge
+mamba install glue-jupyterlab
+```
+
+It is possible to list all of the versions of `glue-jupyterlab` available on your platform with `conda`:
+
+```
+conda search glue-jupyterlab --channel conda-forge
+```
+
+or with `mamba`:
+
+```
+mamba search glue-jupyterlab --channel conda-forge
 ```
 
 Alternatively, `mamba repoquery` may provide more information:
 
 ```
 # Search all versions available on your platform:
-mamba repoquery search gluepyter --channel conda-forge
+mamba repoquery search glue-jupyterlab --channel conda-forge
 
-# List packages depending on `gluepyter`:
-mamba repoquery whoneeds gluepyter --channel conda-forge
+# List packages depending on `glue-jupyterlab`:
+mamba repoquery whoneeds glue-jupyterlab --channel conda-forge
 
-# List dependencies of `gluepyter`:
-mamba repoquery depends gluepyter --channel conda-forge
+# List dependencies of `glue-jupyterlab`:
+mamba repoquery depends glue-jupyterlab --channel conda-forge
 ```
 
 
@@ -129,17 +129,17 @@ Terminology
                   produce the finished article (built conda distributions)
 
 
-Updating gluepyter-feedstock
-============================
+Updating glue-jupyterlab-feedstock
+==================================
 
-If you would like to improve the gluepyter recipe or build a new
+If you would like to improve the glue-jupyterlab recipe or build a new
 package version, please fork this repository and submit a PR. Upon submission,
 your changes will be run on the appropriate platforms to give the reviewer an
 opportunity to confirm that the changes result in a successful build. Once
 merged, the recipe will be re-built and uploaded automatically to the
 `conda-forge` channel, whereupon the built conda packages will be available for
 everybody to install and use from the `conda-forge` channel.
-Note that all branches in the conda-forge/gluepyter-feedstock are
+Note that all branches in the conda-forge/glue-jupyterlab-feedstock are
 immediately built and any created packages are uploaded, so PRs should be based
 on branches in forks and branches in the main repository should only be used to
 build distinct package versions.
