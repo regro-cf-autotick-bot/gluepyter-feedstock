@@ -6,24 +6,24 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/glue_jupyterlab-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/glue_jupyterlab-{{ version }}.tar.gz
   sha256: 7ecb9cdf517e7f29e1ec9a4a19b432fdb6babfb41e643c6ff42bba7073e82bc2
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
-    - python >=3.7
+    - python {{ python_min }}
     - pip
     - hatchling >=1.4.0
     - hatch-nodejs-version
     - hatch-jupyter-builder
     - jupyterlab >=4,<5
   run:
-    - python >=3.7
+    - python >={{ python_min }}
     - jupyter_server >=1.21,<3
     - jupyter-collaboration >=1.0.0,<2.0.0
     - glue-core
@@ -39,6 +39,7 @@ test:
   requires:
     - pip
     - jupyterlab >=4,<5
+    - python {{ python_min }}
   commands:
     # jupyter_server server extension
     - jupyter server extension list  # [unix]
